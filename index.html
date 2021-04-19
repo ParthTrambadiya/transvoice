@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Home</title>
+
+    <script type = "text/javascript" >  
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+        sessionStorage.clear(); 
+    </script>
+    
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><img src="./assets/logo.png"> TransVoice</a>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Multi-Speaker Transcribe</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut neque exercitationem 
+                    iste eum. Aperiam tempore illo nisi at, magnam aspernatur molestias, enim doloremque 
+                    voluptate, nemo veniam! Accusamus earum ipsam, amet quis consequatur necessitatibus 
+                    non consequuntur tempore ab debitis inventore a exercitationem id. Dolores veritatis 
+                    assumenda vitae iste, aperiam est aliquid.
+                </p>
+                <a href="https://sgp.auth.us-east-1.amazoncognito.com/login?response_type=token&client_id=67uag9anpom0lrqi2oauuh91u6&redirect_uri=https://parthtrambadiya.github.io/sgp-6/upload.html">Transcribe Now</a>
+            </div>
+            <div class="imgBx">
+                <img src="./assets/banner_1.gif">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

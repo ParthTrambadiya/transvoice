@@ -1,0 +1,172 @@
+/*--Poopin--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#404040, #151415);
+}
+.banner::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 390px;
+    height: 320px;
+    background: #ff9a00;
+    z-index: 1;
+    transition: 1s;
+}
+.banner::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 139px;
+    width: 390px;
+    height: 150px;
+    background: #ff9a00;
+    z-index: 1;
+    transition: 1s;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+header .logo
+{
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+    transform-origin: right;
+}
+header .logo img
+{
+    max-width: 40px;
+}
+
+.content
+{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    transform-origin: right;
+}
+.content .contentBx
+{
+    max-width: 600px;
+}
+.content .contentBx h2
+{
+    font-size: 4em;
+    line-height: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.content .contentBx p
+{
+    font-size: 1em;
+    color: #fff;
+    margin: 20px 0;
+    text-align: justify;
+}
+.content .contentBx a
+{
+    display: inline-block;
+    border: 1px solid #ff9a00;
+    color: #ff9a00;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.content .contentBx a:hover
+{
+    letter-spacing: 4px;
+    background: #ff9a00;
+    color: #fff;
+}
+.content .imgBx img
+{
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 470px;
+    border: 10px solid #ff9a00;
+    border-radius: 10px;
+    box-shadow: 0px -3px 10px rgba(215, 154, 0, 0.7),
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px 40px;
+    }
+    .banner
+    {
+        padding: 40px;
+        overflow: hidden;
+    }
+    .banner::before
+    {
+        top: 100px;
+        left: 0;
+        width: 170px;
+        height: 310px;
+    }
+    .banner::after
+    {
+        bottom: 0px;
+        right: 0;
+        width: 80px;
+        height: 60px;
+    }
+    .content
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .content .contentBx
+    {
+        max-width: 100%;
+    }
+    .content .imgBx img
+    {
+        max-width: 100%;
+        min-width: 300px;
+    }
+    .content .contentBx h2
+    {
+        font-size: 2.5em;
+    }
+}

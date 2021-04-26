@@ -191,7 +191,8 @@ function downloadFile(e)
         var params = {
             Bucket: "proc-pdf-files-bucket", 
             Key: UserID + '/' + e.cells[1].firstChild.textContent,
-            Expires: 360
+            Expires: 360,
+            ResponseContentDisposition : 'attachment; filename=' + e.cells[1].firstChild.textContent
         };
     
         var promise = s3.getSignedUrlPromise('getObject', params);

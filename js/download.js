@@ -44,7 +44,7 @@ AWS.config.apiVersions = {
 
 var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
 cognitoidentityserviceprovider.getUser(params, function(err, data) {
-    if (err)
+    if (err) 
     {
         window.location.href = 'https://parthtrambadiya.github.io/sgp-6'
     }
@@ -177,6 +177,7 @@ cognitoidentityserviceprovider.getUser(params, function(err, data) {
     }
 });
 
+//function for convert file size from bit to Bytes, KB, MB, GB, TB
 function bytesToSize(bytes) 
 {
     var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
@@ -185,6 +186,7 @@ function bytesToSize(bytes)
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 }
 
+//function for download file from s3 bucket 
 function downloadFile(e)
 {
     var s3 = new AWS.S3({apiVersion: '2006-03-01'});
@@ -225,6 +227,8 @@ function downloadFile(e)
         });
 }
 
+
+//function for delete file from s3 bucket 
 function deleteFile(e)
 {
     console.log(e.cells[1].firstChild.textContent);

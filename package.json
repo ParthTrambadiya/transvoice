@@ -1,0 +1,20 @@
+{
+  "name": "attention",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParthTrambadiya/portfolio.git"
+  },
+  "author": "Parth Trambadiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParthTrambadiya/portfolio/issues"
+  },
+  "homepage": "https://github.com/ParthTrambadiya/portfolio#readme"
+}
